@@ -1,7 +1,11 @@
-export function App() {
-  return (
-    <div className="App">
-      <h1>ReactJS Boilerplate by CITi</h1>
-    </div>
-  );
-}
+import { ThemeProvider } from 'styled-components';
+import { Routes } from './routes';
+import { GlobalStyle } from './styles/global';
+import { theme } from './styles/theme';
+
+export const App: React.FC = () => (
+  <ThemeProvider theme={theme}>
+    <Routes />
+    <GlobalStyle />
+  </ThemeProvider>
+);

@@ -44,7 +44,13 @@
       "no-console": "off",
       "react/prop-types": [2, { "ignore": ["children"] }],
       "react/react-in-jsx-scope": "off",
-      "react/jsx-props-no-spreading": "off"
+      "react/jsx-props-no-spreading": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": ["**/*.stories.tsx", "**/*.test.*"]
+        }
+      ]
   },
   "settings": {
       "import/resolver": {

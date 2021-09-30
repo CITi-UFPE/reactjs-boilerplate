@@ -1,5 +1,5 @@
 import React from 'react';
-import './button.css';
+import { ButtonStyled } from './style';
 
 interface ButtonProps {
   primary: boolean;
@@ -18,13 +18,13 @@ export const Button: React.ElementType = ({
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
+    <ButtonStyled
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
       {label}
-    </button>
+    </ButtonStyled>
   );
 };

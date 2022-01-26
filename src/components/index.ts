@@ -1,5 +1,5 @@
-import { HomePage } from './HomePage';
+import { Button } from './ButtonExample/Button';
 
 export {
-  HomePage,
+  Button,
 };

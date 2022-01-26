@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { HomePage } from '../components';
+import { Home } from '../pages';
 
 export const PublicRoutes = (): JSX.Element => (
   <Switch>
-    <Route path="/" exact>
-      <HomePage />
+    <Route path="/">
+      <Home />
     </Route>
   </Switch>
 );
